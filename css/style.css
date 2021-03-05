@@ -1,0 +1,84 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'RocknRoll One', sans-serif;
+  background-color: lightblue;
+  text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 366px;
+  margin: 40px auto;
+}
+.choice{
+background: white;
+width: 120px;
+height: 120px;
+box-shadow: 0 0 0 1px #333333;
+border: 1px solid #333333;
+background-size: contain;
+}
+
+.player{
+  cursor: pointer;
+}
+.player:hover{
+border: 1px solid #fff;
+}
+#rock {
+    background-image: url("../images/rock.png");
+}
+#scissor {
+    background-image: url("../images/scissor.png");
+}
+#paper {
+    background-image: url("../images/paper.png");
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+}
+button:hover{
+  background: skyblue;
+  color: white;
+}
+
+.container img{
+  width: 118px;
+  height: 118px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.bot{
+  display: none;
+}
+#restart {
+  display: none;
+}
+
+a.button {
+    text-decoration: none;
+    color: initial;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+}
+a.button:hover {
+  color: white;
+  background-color: skyblue;
+}
